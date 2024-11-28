@@ -1,6 +1,12 @@
 package com.silamburobot.leetcode.array
 object StringMerge {
-  def mergeAlternately(word1: String, word2: String): String = {
+  def main(args: Array[String]): Unit = {
+    val word1 = "aceg"
+    val word2 = "bdfh"
+    val result = mergeAlternately(word1, word2)
+    println(result)
+  }
+  private def mergeAlternately(word1: String, word2: String): String = {
     var words:Array[Char]=Array()
     val maxWord = word1.length - word2.length
     if(maxWord >=0)
